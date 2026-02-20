@@ -1,0 +1,16 @@
+---
+title: "Workshop-test-repo-12pm"
+author: "Ian Del Tredici"
+date: "2/20/26"
+format: html
+editor: visual
+---
+
+## Set up chunk
+
+```{r}
+library(tidyverse)
+library(lterdatasampler)
+
+data(pie_crab)
+```
