@@ -27,7 +27,7 @@ ggplot( data = pie_crab, #base layer for plot, data is pie_crab
             color = site)) + #color by site
   geom_point() + #scatter plot
   theme_minimal() + #change theme
-  scale_color_viridis(discrete = TRUE, #color-blind friendly colors)
+  scale_color_viridis(discrete = TRUE, #color-blind friendly colors palette
                       option = "plasma")
   
 ```
