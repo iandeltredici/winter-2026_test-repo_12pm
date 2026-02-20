@@ -9,17 +9,19 @@ editor: visual
 ## Set up chunk
 
 ```{r}
-library(tidyverse)
-library(lterdatasampler)
+#| label: load libraries
+#| message: false
+library(tidyverse) #general use package
+library(lterdatasampler) #package of data frames
 
-data(pie_crab)
+data(pie_crab) #import pie_crab data
 ```
 
 # New Section: exploratory visualization
 
 ```{r}
 #| label: latitude size plot
-ggplot( data = pie_crab,
-        aes(x = latitude,
-            y = size))
+ggplot( data = pie_crab, #base layer for plot, data is pie_crab
+        aes(x = latitude, #x axis is latitude
+            y = size)) #y axis is size
 ```
